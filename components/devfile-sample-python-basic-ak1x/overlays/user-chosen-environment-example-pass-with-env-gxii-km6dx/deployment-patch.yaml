@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-ak1x
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-tvde/devfile-sample-python-basic-ak1x@sha256:9b82fdc3376205308e2615a43a73740723fe96cf25ac0110322e8680ecad9cf1
+        name: my-python
+        resources: {}
+status: {}
